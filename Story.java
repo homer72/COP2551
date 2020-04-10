@@ -7,8 +7,9 @@ public class Story {
 
 	public void intro(Character player) {
 		System.out.println(
-				"*You wake up hazily in an unknown place. " + "You are in a small room with nothing more than a bed, "
-						+ "a nightstand with a lamp and your blaster on it.*");
+				"*You wake up hazily in an unknown place. You are sleeping on a worn mattress inside a worn house. You absorb everything in. " + "You are in a small room with nothing more than a bed, "
+						+ "a nightstand with a lamp and your blaster on it. The air is cold and silent, at least for the moment."
+			+ "You look to the left and right and forwards, seeing nothing but utter destruction. You pause for a while, trying to recall something you can't, but then... the silence is interrupted.*");
 		// print options
 		System.out.println(
 				"*Suddenly there is a loud bang on the door. What do you choose to do? (Select options 1, 2, 3)*"
