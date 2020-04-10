@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//The main story parts
 public class Story {
 	Scanner input = new Scanner(System.in);
 
