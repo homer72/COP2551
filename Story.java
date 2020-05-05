@@ -6,19 +6,28 @@ public class Story {
 	byte charChoice;
 
 	public void intro(Character player) {
+		
 		System.out.println(
 				"*You wake up hazily in an unknown place. " + "You are in a small room with nothing more than a bed, "
 						+ "a nightstand with a lamp and your blaster on it.*");
+		Sysyem.out.println(// Dylans code --
+			"*Things don't feel right. Its dark and you can't remember a thing. You decide to turn on the lamp and take a "
+				+ "moment to think... None of this makes any sense you think to your self. A feeling of dred hangs over "
+				+"you.*");
+		Sysyem.out.println(// Dylans code --
+			"*You start pacing around the room devising a plan when suddenly you hear a loud bang on the door.. " 
+			+ "your heart sinks. That didn't sound friendly. ");
 		// print options
 		System.out.println(
-				"*Suddenly there is a loud bang on the door. What do you choose to do? (Select options 1, 2, 3)*"
+				"*What do you choose to do? (Select options 1, 2, 3)*"
 						+ "\n*1. Walk over and open the door.*" + "\n*2. Grab the blaster off the nightstand."
 						+ "\n*3. Turn off the light and hide under the bed.");
 		charChoice = input.nextByte();
 
 		// Path 1 of Option 1
-		if (charChoice == 1) {
-			System.out.println("*You open the door and a zombie falls dead through the doorway.");
+		if (charChoice == 1) {// Dylans code --
+			System.out.println("*You swing the door open hoping to see a familiar face, and a rotten disgusting figure falls on the floor" 
+					  + "This has to be a zombie.*");
 		}
 
 		// Path 2 of Option 1
@@ -30,20 +39,21 @@ public class Story {
 			charChoice = input.nextByte();
 
 			// Path 1 of Path 2 of Option 1
-			if (charChoice == 1) {
-				System.out.println("*A zombie falls dead through the doorway.*");
+			if (charChoice == 1) {// Dylans code --
+				System.out.println("*You get the courage to investigate the banging on the door, with a quick flick of the door handle"
+						   + " you open the door with your gun aimed. And a gross dark zombie character falls in front of you.*");
 			}
 			// Path 2 of Path 2 of Option 1
-			else {
+			else {//Dylans code --
 				System.out.println("*You hunker down behind the bed waiting to see what happens.*"
 						+ "\n*You wait a few minutes, but nothing happens, so you get up and open the door."
-						+ "\n*A zombie falls dead through the doorway.");
+						+ "\n*A dark disgusting figure falls onto the ground.. Must be a zombie.");// Dylans code --
 			}
 		}
 		// Path 3 of Option 1
 		else {
 			System.out.println("You wait a few minutes, but nothing happens, so you get up and open the door."
-					+ "\n*A zombie falls dead through the doorway.");
+					+ "\n*A dark disgusting figure falls onto the ground.. Must be a zombie.");// Dylans code --
 		}
 	}
 
@@ -58,15 +68,18 @@ public class Story {
 
 		// Path 1 of Option 2
 		if (charChoice == 1) {
-			System.out.println("*You were over ran by armored zombies that eat your flesh! \n " + "Game Over!*");
+			System.out.println("*When you turn a corner hundreds of armored zombies are there and notice you, they all sprint after you "
+					   + " You die almost instantly \n " + "Game Over!*");// Dylans code --
 			return false;
 
 			// Path 3 of Option 2
 		} else if (charChoice == 3) {
 			System.out.println("*You walk in and get onto the ride. \n "
 					+ "Shooting the control panel to start the ride.* \n" + "But, the ride doesn't go anywhere! \n"
+					+ "Shit that would've been sick... \n"//Dylans code --
 					+ "You climb to the top of the roller coster ride to find the exit. \n"
-					+ "You see a hundreds of zombies! \n"
+					+ "You see hundreds of zombies.. Seeing all of the undead people under you is terrifying. \n"//Dylans code--
+					+ "So introspective. This moment. How could this have been avoided?.. \n"//Dylans code--
 					+ "You climb back down where you came and see a zombie waiting for you!\n"
 					+ "Do you shoot it or run? (Select options 1 or 2) \n" + "1. Shoot the zombie in the head. \n"
 					+ "2. RUN!!!!!!");
